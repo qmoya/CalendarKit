@@ -155,7 +155,7 @@ public class DayView: UIView, TimelinePagerViewDelegate {
 
   override public func layoutSubviews() {
     super.layoutSubviews()
-    if #available(iOS 11, *) {} else {
+    if #available(iOS 11, *) {} {
       dayHeaderView.frame = CGRect(origin: CGPoint(x: 0, y: layoutMargins.top),
                                    size: CGSize(width: bounds.width, height: headerHeight))
       let timelinePagerHeight = bounds.height - dayHeaderView.frame.maxY
